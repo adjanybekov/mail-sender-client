@@ -29,8 +29,19 @@ export const SubscriberPage = (props) => {
     >
       <div
         className="container-contact100"
-        style={{ background: "rgba(255,255,255,0.6)" }}
+        style={{ background: "rgba(255,255,255,0.8)" }}
       >
+        <span
+          className="contact100-form-title"
+          style={{
+            fontFamily: "poppins-extralight,poppins,sans-serif",
+            color: "rgb(255, 200, 36)",
+            // height: "10px",
+            paddingBottom: "0px",
+          }}
+        >
+          MORNING <span style={{ fontWeight: "bold" }}>GLORY</span>
+        </span>
         <div
           className="contact100-map"
           id="google_map"
@@ -49,9 +60,9 @@ export const SubscriberPage = (props) => {
             backgroundColor: "transparent",
           }}
         >
-          <span className="contact100-form-symbol">
+          {/* <span className="contact100-form-symbol">
             <img src="assets/images/icons/symbol-01.png" alt="SYMBOL-MAIL" />
-          </span>
+          </span> */}
 
           <Formik
             initialValues={{ email: "" }}
@@ -104,7 +115,7 @@ export const SubscriberPage = (props) => {
                 <div className="input-group mb-3">
                   <input
                     className="form-control"
-                    placeholder="Enter email"
+                    placeholder="Введите email"
                     aria-label="Enter email"
                     aria-describedby="button-addon2"
                     type="email"
@@ -123,7 +134,7 @@ export const SubscriberPage = (props) => {
                       disabled={isSubmitting}
                       style={{ backgroundColor: "grey", color: "black" }}
                     >
-                      Subscribe
+                      Подписаться
                     </button>
                   </div>
                 </div>

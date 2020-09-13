@@ -141,9 +141,9 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   padding: 15px;
-  background: darkgreen;
+  /* background: darkgreen; */
   position: relative;
   z-index: 1;
 }
@@ -157,7 +157,7 @@ iframe {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(173, 173, 173, 0.4);
+  /* background: rgba(173, 173, 173, 0.4); */
   pointer-events: none;
 }
 
@@ -175,8 +175,8 @@ iframe {
   background: #fff;
   border-radius: 2px;
   position: relative;
-  margin-top: 55px;
-  padding: 92px 70px 88px 70px;
+  margin-top: 0px;
+  padding: 0px 70px 88px 70px;
 
   box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
