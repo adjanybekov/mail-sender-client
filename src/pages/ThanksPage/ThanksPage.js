@@ -2,8 +2,10 @@ import React from "react";
 
 export function ThanksPage() {
   return (
-    <div>
-      Thanks for subscribing! <p>What is in it for me?</p>
+    <div style={{ display: "flex" }}>
+      <div className="contact100-form-title" style={{ textAlign: "center" }}>
+        Спасибо за подписку! Чоң рахмат!
+      </div>
     </div>
   );
 }
