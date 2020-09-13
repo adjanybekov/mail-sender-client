@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { emailService } from "../../_services/email.service";
 import { Formik, ErrorMessage } from "formik";
+import { urls } from "../../_constants/urls";
 export const SubscriberPage = (props) => {
   const [email, setEmail] = useState("");
 
@@ -17,9 +18,19 @@ export const SubscriberPage = (props) => {
       });
   };
 
+  var img = require("./assets/background.jpg");
+
   return (
-    <div>
-      <div className="container-contact100">
+    <div
+      style={{
+        backgroundImage: `url(${img})`,
+        backgroundSize: "cover",
+      }}
+    >
+      <div
+        className="container-contact100"
+        style={{ background: "rgba(255,255,255,0.6)" }}
+      >
         <div
           className="contact100-map"
           id="google_map"
@@ -30,7 +41,14 @@ export const SubscriberPage = (props) => {
           data-draggable="1"
         ></div>
 
-        <div className="wrap-contact100">
+        <div
+          className="wrap-contact100"
+          style={{
+            boxShadow: "0",
+            WebkitBoxShadow: "0 0 black",
+            backgroundColor: "transparent",
+          }}
+        >
           <span className="contact100-form-symbol">
             <img src="assets/images/icons/symbol-01.png" alt="SYMBOL-MAIL" />
           </span>
@@ -71,12 +89,16 @@ export const SubscriberPage = (props) => {
                 className="contact100-form validate-form flex-sb flex-w"
               >
                 <span className="contact100-form-title">
-                  Become smarter in just 5 minutes
+                  ИДЕАЛЬНОЕ УТРО НАЧИНАЕТСЯ С КОФЕ, НОВОСТЕЙ И КЫРГЫЗСКОГО
                 </span>
 
                 <span className="contact100-form-subtitle">
-                  Get the daily email that makes reading the news actually
-                  enjoyable. Stay informed and entertained, for free.
+                  Morning Glory будет отправлять тебе на почту выжимку самых
+                  важных событий за прошедшие сутки. Некоторые будут написаны на
+                  лёгком кыргызском, чтобы ты мог понимать и изучать язык.
+                </span>
+                <span className="contact100-form-subtitle">
+                  Ну а кофе с тебя!
                 </span>
 
                 <div className="input-group mb-3">
@@ -99,6 +121,7 @@ export const SubscriberPage = (props) => {
                       type="submit"
                       id="button-addon2"
                       disabled={isSubmitting}
+                      style={{ backgroundColor: "grey", color: "black" }}
                     >
                       Subscribe
                     </button>
