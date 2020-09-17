@@ -38,9 +38,24 @@ export const SubscriberPage = (props) => {
             color: "rgb(255, 200, 36)",
             // height: "10px",
             paddingBottom: "0px",
+            paddingTop: "30px",
+            paddingLeft: "7vw",
+            fontSize: "5vh",
+            fontWeight: "lighter",
+            fontFamily: "system-ui",
           }}
         >
-          MORNING <span style={{ fontWeight: "bold" }}>GLORY</span>
+          MORNING{" "}
+          <span
+            style={{
+              fontWeight: "bold",
+              paddingLeft: "6px",
+              fontWeight: "500",
+            }}
+          >
+            {" "}
+            GLORY
+          </span>
         </span>
         <div
           className="contact100-map"
@@ -100,7 +115,7 @@ export const SubscriberPage = (props) => {
                 className="contact100-form validate-form flex-sb flex-w"
               >
                 <span className="contact100-form-title">
-                  ИДЕАЛЬНОЕ УТРО НАЧИНАЕТСЯ С КОФЕ, НОВОСТЕЙ И КЫРГЫЗСКОГО
+                  ИДЕАЛЬНОЕ УТРО НАЧИНАЕТСЯ С КОФЕ, НОВОСТЕЙ И КЫРГЫЗСКОГО.
                 </span>
 
                 <span className="contact100-form-subtitle">
