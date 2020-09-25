@@ -1,16 +1,16 @@
 import { urls } from "../_constants/urls";
-import axios from 'axios';
+import axios from "axios";
 
 export const emailService = {
-    createEmail
+  createEmail,
 };
 
 function createEmail(email) {
-    const requestOptions = 
-        {method:'POST',
-        url:`${urls.emailUrl}/create`,
-        data:{email}
-        }
+  const requestOptions = {
+    method: "POST",
+    url: `${urls.emailUrl}/create`,
+    data: { email },
+  };
 
-    return axios(requestOptions);
+  return axios(requestOptions);
 }
