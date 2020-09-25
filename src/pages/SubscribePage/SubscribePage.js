@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { emailService } from "../../_services/email.service";
 import { Formik, ErrorMessage } from "formik";
 import { urls } from "../../_constants/urls";
+import { mailchimpService } from "../../_services/mailchimp.service";
 export const SubscriberPage = (props) => {
   const [email, setEmail] = useState("");
 
   const submitForm = (values) => {
     console.log(values);
-    emailService
-      .createEmail(values.email)
+    mailchimpService
+      .addSubscriber(values.email)
       .then((res) => {
         console.log(res.data);
         window.location.href = "/welcome";
@@ -16,6 +17,16 @@ export const SubscriberPage = (props) => {
       .catch((err) => {
         console.log(err.response);
       });
+
+    // emailService
+    // .createEmail(values.email)
+    // .then((res) => {
+    //   console.log(res.data);
+    //   window.location.href = "/welcome";
+    // })
+    // .catch((err) => {
+    //   console.log(err.response);
+    // });
   };
 
   var img = require("./assets/background.jpg");
